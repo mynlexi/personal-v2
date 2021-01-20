@@ -49,9 +49,9 @@ export const Herop2 = styled.p`
 `
 
 export const HeroButton = styled.a`
-  color: green;
+  color: var(--green);
   background-color: transparent;
-  border: 1px solid green;
+  border: 1px solid var(--green);
   border-radius: 4px;
   padding: 1.25rem 1.75rem;
   font-size: 14px;
