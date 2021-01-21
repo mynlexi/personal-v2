@@ -45,14 +45,14 @@ const AboutSection = (myLoader) => {
         </AboutTextBlock>
         <AboutImgBlock>
           <div className="wrapper">
-            <div className="img">
               <Image
               src='/images/Profile-Square.jpg'
               width={350}
               height={350}
               layout="responsive"
+              className="img"
               
-              /></div>
+              />
           </div>
         </AboutImgBlock>
 

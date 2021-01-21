@@ -88,6 +88,7 @@ max-width: 300px;
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1);
     transition: var(--transition);
+    z-index: 4;
   }
   &:before,
   &:after {
@@ -104,12 +105,13 @@ max-width: 300px;
     left: 0;
     background-color: var(--navy);
     mix-blend-mode: screen;
+    z-index: 3;
   }
   &:after {
     border: 2px solid var(--green);
     top: 20px;
     left: 20px;
-    z-index: -1;
+    z-index: 2;
   }
 
 
