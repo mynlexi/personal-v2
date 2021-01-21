@@ -57,12 +57,13 @@ export const AboutSkillList = styled.ul`
 
 
 export const AboutImgBlock = styled.div`
-position: relative;
-max-width: 300px;
-@media (max-width: 768px) {
-  margin: 50px auto 0;
-  width: 70%;
-}
+  position: relative;
+  max-width: 300px;
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+
 .wrapper {
   display: block;
   position: relative;
@@ -82,12 +83,14 @@ max-width: 300px;
       mix-blend-mode: normal;
     }
   }
+
   .img {
     position: relative;
     border-radius: var(--border-radius);
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1);
     transition: var(--transition);
+
     z-index: 4;
   }
   &:before,
@@ -113,6 +116,5 @@ max-width: 300px;
     left: 20px;
     z-index: 2;
   }
-
 
 `
