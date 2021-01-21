@@ -133,5 +133,7 @@ export const ProjectImageA = styled.a`
   background-color: var(--green);
   border-radius: var(--border-radius);
   vertical-align: middle;
+  height: 250px;
+  width: 250xp;
 `
 

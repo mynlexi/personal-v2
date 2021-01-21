@@ -4,6 +4,7 @@ import Image from 'next/image'
 import {ProjectContent, ProjectGrid, ProjectDescription, ProjectOverline, ProjectTitle, ProjectImage, ProjectTechList, ProjectImageA, ProjectLi, ProjectLinks } from './ProjectElements'
 
 const LargeProject = ({id, title, description, techlist, github_link, project_link, img, alt}) => {
+  const image_path = img[0]
   
   return (
     <ProjectGrid id={id}>
@@ -45,9 +46,11 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
           <div>
             <div></div>
             <Image
-            src={img}
+            src={img[0]}
             alt={alt}
-            layout="fill"
+            width={img[1]}
+            height={img[2]}
+            layout="responsive"
             />
 
           </div>

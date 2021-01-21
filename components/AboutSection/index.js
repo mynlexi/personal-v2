@@ -46,7 +46,7 @@ const AboutSection = (myLoader) => {
         <AboutImgBlock>
           <AboutWrapper>
               <Image
-              src='/public/Profile-Square.jpg'
+              src='/images/Profile-Square.jpg'
               width={350}
               height={350}
               layout="responsive"
