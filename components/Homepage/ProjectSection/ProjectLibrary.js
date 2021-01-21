@@ -2,6 +2,10 @@ import React from 'react'
 import { LibrarySection, LibH2, LibraryGrid, LibA, LibButton, ProjectCard, CardInner,ProjectTop, ProjectLibraryLinks, CardTitle, CardDescription, ProjectTechstack } from './ProjectElements'
 import {LibraryObj} from './Data'
 import Link from 'next/link'
+import IconGitHub from '../../Icons/github'
+import IconExternal from '../../Icons/external'
+import IconFolder from'../../Icons/folder'
+
 
 const ProjectLibrary = () => {
 
@@ -23,26 +27,27 @@ const ProjectLibrary = () => {
             <CardInner>
               <header>
                 <ProjectTop>
-                  {/* <div className="folder">
-              get feather icon
-                  </div> */}
+                  <div className="folder">
+                    <IconFolder />
+                  </div>
                   <ProjectLibraryLinks>
                     {github && (
                       <Link href={github}>
                       <a aria-label="GitHub Link">
-                      {/* <Icon name="GitHub" /> */}
+                      <IconGitHub />
                     </a>
                     </Link>
                     )}
                     { external && (
                       <Link href={external}>
                       <a>
-                        link
+                       <IconExternal />
                       </a>
                       </Link>
                     )
-                    }
+                    }  
                   </ProjectLibraryLinks>
+                  </ProjectTop>
                   <CardTitle>
                     {title}
                   </CardTitle>
@@ -51,7 +56,7 @@ const ProjectLibrary = () => {
                   </CardDescription>
 
 
-                </ProjectTop>
+              
 
               </header>
               <footer>
