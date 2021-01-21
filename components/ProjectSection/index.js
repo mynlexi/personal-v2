@@ -1,4 +1,7 @@
 import React from 'react'
+import {PSection} from './ProjectElements'
+import LargeProject from './LargeProject'
+import { ProjectObjOne } from './Data'
 
 const ProjectSection = () => {
   return (
@@ -6,7 +9,8 @@ const ProjectSection = () => {
       <h2>
       Some Things I’ve Built
       </h2>
-      
+
+      <LargeProject {...ProjectObjOne} />
     </PSection>
   )
 }

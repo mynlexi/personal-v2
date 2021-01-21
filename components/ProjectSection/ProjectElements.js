@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Psection = styled.section`
+export const PSection = styled.section`
   margin: 0px auto;
   padding: 100px 0px;
   max-width: 1000px;
@@ -54,7 +54,7 @@ export const ProjectTitle = styled.h3`
   color: var(--lightest-slate);
   font-size: clamp(24px, 5vw, 28px);
 
-  media (min-width: 768px) {
+  @media (min-width: 768px) {
     margin: 0px 0px 20px;
   }
 
@@ -86,7 +86,7 @@ export const ProjectTechList = styled.ul`
   justify-content: flex-end;
 `
 
-export const ProjectLi = styöed.li`
+export const ProjectLi = styled.li`
   argin: 0px 20px 5px 0px;
   color: var(--light-slate);
   font-family: var(--font-mono);

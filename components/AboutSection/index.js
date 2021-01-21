@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import {AboutSectionWrapper, AboutH2, AboutImgBlock, AboutInner, AboutLi, AboutP, AboutSkillList, AboutTextBlock, AboutWrapper} from './AboutElements'
 
-const AboutSection = () => {
+const AboutSection = (img) => {
   return (
     <AboutSectionWrapper id="about">
       <AboutH2 className="">
@@ -46,7 +46,7 @@ const AboutSection = () => {
         <AboutImgBlock>
           <AboutWrapper>
               <Image
-              src="/../public/images/Profile-Square.jpg"
+              src={'/../public/images/Profile-Square.jpg'}
               width={350}
               height={350}
               layout="responsive"

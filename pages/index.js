@@ -6,6 +6,9 @@ import Sidebar from '../components/Sidebar'
 import HeroSection from '../components/HeroSection'
 import {MainContainer} from '../components/MainElements'
 import AboutSection from '../components/AboutSection'
+import ProjectSection from '../components/ProjectSection'
+
+
 
 
 export default function Home() {
@@ -15,6 +18,7 @@ export default function Home() {
   const toggle = () => {
     setIsOpen(!isOpen)
   }
+
   return (
           <div>
           <Sidebar isOpen={isOpen} toggle={toggle}/>
@@ -23,6 +27,7 @@ export default function Home() {
           
             <HeroSection />
             <AboutSection />
+            <ProjectSection />
            
           </MainContainer>
      </div>
