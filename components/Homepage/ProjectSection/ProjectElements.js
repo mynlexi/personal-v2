@@ -98,7 +98,7 @@ export const ProjectTechList = styled.ul`
 `
 
 export const ProjectLi = styled.li`
-  argin: 0px 20px 5px 0px;
+  margin: 0px 20px 5px 0px;
   color: var(--light-slate);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
@@ -118,6 +118,25 @@ export const ProjectLinks = styled.div`
   justify-content: flex-end;
   margin-left: 0px;
   margin-right: -10px;
+
+  a {
+    
+    padding: 10px;
+    &.external {
+      svg {
+        width: 22px;
+        height: 22px;
+        margin-top: -4px;
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      color: var(--green)
+    }
 `
 
 export const ProjectImage = styled.div`
@@ -235,8 +254,17 @@ export const CardInner = styled.div`
 `
 
 export const ProjectTop = styled.div`
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
   margin-bottom: 35px;
+  
   .folder {
+    width: 40px;
+    height: 40px;
+    
     color: var(--green);
     svg {
       width: 40px;
@@ -261,6 +289,10 @@ export const ProjectLibraryLinks = styled.div`
     svg {
       width: 20px;
       height: 20px;
+    }
+
+    &:hover {
+      color: var(--green)
     }
   }
 
@@ -296,16 +328,16 @@ export const ProjectTechstack = styled.ul`
 `
 
 export const LibButton = styled.button`
-color: var(--green);
-background-color: transparent;
-border: 1px solid var(--green);
-border-radius: 4px;
-padding: 1.25rem 1.75rem;
-font-size: 14px;
-// font-family: var(--font-mono);
-line-height: 1;
-text-decoration: none;
-cursor: pointer;
-transition: all 0.25s cubic-bezier(0.645,0.045,0.0355,1);
-margin-top: 50px;
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  // font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.0355,1);
+  margin-top: 50px;
 `

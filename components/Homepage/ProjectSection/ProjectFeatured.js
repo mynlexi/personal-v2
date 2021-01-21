@@ -2,9 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {ProjectContent, ProjectGrid, ProjectDescription, ProjectOverline, ProjectTitle, ProjectImage, ProjectTechList, ProjectImageA, ProjectLi, ProjectLinks, ProjectImgStylediv } from './ProjectElements'
+import IconGitHub from '../../Icons/github'
+import IconExternal from '../../Icons/external'
+
 
 const LargeProject = ({id, title, description, techlist, github_link, project_link, img, alt}) => {
-  const image_path = img[0]
+
   
   return (
     <ProjectGrid id={id}>
@@ -31,10 +34,10 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
         </ProjectTechList>
         <ProjectLinks>
           <Link href={github_link}>
-          <a>SVG</a>
+          <a ><IconGitHub /></a>
           </Link>
           <Link href={project_link}>
-          <a>SVG</a>
+          <a><IconExternal /></a>
           </Link>
           {/* if one of the link is missing dont display icon? */}
         </ProjectLinks>
