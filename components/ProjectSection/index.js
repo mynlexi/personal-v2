@@ -1,9 +1,11 @@
 import React from 'react'
 import {PSection} from './ProjectElements'
-import LargeProject from './LargeProject'
-import { ProjectObjOne } from './Data'
+import LargeProject from './ProjectFeatured'
+import { LibraryObj, ProjectObjOne } from './Data'
+import ProjectLibrary from './ProjectLibrary'
 
 const ProjectSection = () => {
+  console.log(LibraryObj)
   return (
     <PSection id="projects">
       <h2>
@@ -11,6 +13,7 @@ const ProjectSection = () => {
       </h2>
 
       <LargeProject {...ProjectObjOne} />
+      <ProjectLibrary />
     </PSection>
   )
 }

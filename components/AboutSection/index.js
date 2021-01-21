@@ -17,7 +17,7 @@ const AboutSection = (myLoader) => {
           I immensly enjoy building things, and making them run as fast as possible.  
           </AboutP>
           <AboutP>
-          After recieving my MSc. in Finance I decided to pursue a career in Full-stack development.
+          After recieving my MSc. in Finance I decided to pursue a career as Full-stack Developer.
           </AboutP>
           <AboutP>
           Here are a few technologies I've been working with recently 
@@ -39,20 +39,21 @@ const AboutSection = (myLoader) => {
             HTML & (S)CSS
             </AboutLi>
             <AboutLi>
-            Tailwind
+            Tailwind CSS
             </AboutLi>
           </AboutSkillList>
         </AboutTextBlock>
         <AboutImgBlock>
-          <AboutWrapper>
+          <div className="wrapper">
+            <div className="img">
               <Image
               src='/images/Profile-Square.jpg'
               width={350}
               height={350}
               layout="responsive"
               
-              />
-          </AboutWrapper>
+              /></div>
+          </div>
         </AboutImgBlock>
 
       </AboutInner>

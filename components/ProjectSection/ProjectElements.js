@@ -73,6 +73,17 @@ export const ProjectDescription = styled.div`
   background-color: var(--light-navy);
   color: var(--light-slate);
   font-size: var(--fz-lg);
+
+  @media (max-width: 768px) {
+    padding: 20px 0px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
 `
 export const ProjectTechList = styled.ul`
   display: flex;
@@ -110,30 +121,191 @@ export const ProjectLinks = styled.div`
 `
 
 export const ProjectImage = styled.div`
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
-  transition: var(--transition);
-  grid-area: 1 / 6 / -1 / -1;
+  grid-column: 1 / 8;
+  grid-row: 1 / -1;
   position: relative;
   z-index: 1;
-  grid-column: 1 / 8;
-
   @media (max-width: 768px) {
     grid-column: 1 / -1;
     height: 100%;
     opacity: 0.25;
   }
+  a {
+    width: 100%;
+    background-color: var(--green);
+    border-radius: var(--border-radius);
+    vertical-align: middle;
+    &:hover,
+    &:focus {
+      background: transparent;
+      &:before,
+      .img {
+        background: transparent;
+        filter: none;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      transition: var(--transition);
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+  }
+  .img {
+    border-radius: var(--border-radius);
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+    @media (max-width: 768px) {
+      object-fit: cover;
+      width: auto;
+      height: 100%;
+      filter: grayscale(100%) contrast(1) brightness(80%);
+    }
+  }
+`;
 
-  @media (max-width: 768px) {
-    grid-column: 1 / -1;
+export const LibrarySection = styled.section`
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const LibH2 = styled.h2`
+  font-size: clamp(24px,5vw,var(--fz-heading));
+`
+
+export const LibA = styled.a`
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  &:after {
+    bottom: 0.1em;
+  }
+`;
+
+export const LibraryGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+  position: relative;
+  margin-top: 50px;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+`
+export const ProjectCard = styled.div`
+  cursor: default;
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    outline: 0;
+    .project-inner {
+      transform: translateY(-5px);
+    }
   }
 `
 
-export const ProjectImageA = styled.a`
-  width: 100%;
-  background-color: var(--green);
+export const CardInner = styled.div`
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
   border-radius: var(--border-radius);
-  vertical-align: middle;
-  height: 250px;
-  width: 250xp;
+  background-color: var(--light-navy);
+  transition: var(--transition);
 `
 
+export const ProjectTop = styled.div`
+  margin-bottom: 35px;
+  .folder {
+    color: var(--green);
+    svg {
+      width: 40px;
+      height: 40px;
+  }
+`
+
+export const ProjectLibraryLinks = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -10px;
+  color: var(--light-slate);
+  a {
+    padding: 5px 7px;
+    &.external {
+      svg {
+        width: 22px;
+        height: 22px;
+        margin-top: -4px;
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+`
+
+export const CardTitle = styled.h3`
+  margin: 0 0 10px;
+  color: var(--lightest-slate);
+  font-size: var(--fz-xxl);
+`
+
+export const CardDescription = styled.div`
+  color: var(--light-slate);
+  font-size: 17px;
+`
+
+export const ProjectTechstack = styled.ul`
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px 0 0 0;
+  list-style: none;
+  li {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: 1.75;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+`
+
+export const LibButton = styled.button`
+color: var(--green);
+background-color: transparent;
+border: 1px solid var(--green);
+border-radius: 4px;
+padding: 1.25rem 1.75rem;
+font-size: 14px;
+// font-family: var(--font-mono);
+line-height: 1;
+text-decoration: none;
+cursor: pointer;
+transition: all 0.25s cubic-bezier(0.645,0.045,0.0355,1);
+margin-top: 50px;
+`

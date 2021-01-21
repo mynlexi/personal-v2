@@ -10,3 +10,21 @@ export const ProjectObjOne = {
   project_link: "https://www.longtermgiving.trade/"
 
 }
+
+
+
+export const LibraryObj = [
+   {
+    github: null,
+    external: "https://nextjs-jason.vercel.app/",
+    title: "Porting a Jekyll Blog to Next.js",
+    description: "In preparation for larger Projects with Next.js I ported a Jekyll website to Next.js.",
+    techlist: ["Next.js", "Tailwind CSS", "Jekyll"]
+  },
+  { github: null,
+    external: "https://nextjs-jason.vercel.app/",
+    title: "Porting a Jekyll Blog to Next.js",
+    description: "In preparation for larger Projects with Next.js I ported a Jekyll website to Next.js.",
+    techlist: ["Next.js", "Tailwind CSS", "Jekyll"]
+  }
+]
