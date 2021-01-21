@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import {ProjectContent, ProjectGrid, ProjectDescription, ProjectOverline, ProjectTitle, ProjectImage, ProjectTechList, ProjectImageA, ProjectLi, ProjectLinks } from './ProjectElements'
+import {ProjectContent, ProjectGrid, ProjectDescription, ProjectOverline, ProjectTitle, ProjectImage, ProjectTechList, ProjectImageA, ProjectLi, ProjectLinks, ProjectImgStylediv } from './ProjectElements'
 
 const LargeProject = ({id, title, description, techlist, github_link, project_link, img, alt}) => {
   const image_path = img[0]
@@ -42,19 +42,19 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
       </ProjectContent>
       <ProjectImage>
         <Link href={project_link}>
-        <ProjectImageA>
-          <div>
-            <div></div>
-            <Image
-            src={img[0]}
-            alt={alt}
-            width={img[1]}
-            height={img[2]}
-            layout="responsive"
-            />
+          <a>
+            <div className="img">
+              <div></div>
+              <Image
+              src={img[0]}
+              alt={alt}
+              width={img[1]}
+              height={img[2]}
+              layout="responsive"
+              />
 
-          </div>
-        </ProjectImageA>
+            </div>
+          </a>
         </Link>
 
       </ProjectImage>
