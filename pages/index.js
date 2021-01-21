@@ -10,14 +10,14 @@ import ProjectSection from '../components/ProjectSection'
 
 
 
-
-export default function Home() {
+export default function Home({myLoader}) {
 
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
     setIsOpen(!isOpen)
   }
+  
 
   return (
           <div>
