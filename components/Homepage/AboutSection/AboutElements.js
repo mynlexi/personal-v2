@@ -90,29 +90,31 @@ export const AboutImgBlock = styled.div`
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1);
     transition: var(--transition);
-    }
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
-    }
-    &:after {
-      border: 2px solid var(--green);
-      top: 20px;
-      left: 20px;
-      z-index: -1;
-    }
 
+    z-index: 4;
+  }
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    background-color: var(--navy);
+    mix-blend-mode: screen;
+    z-index: 3;
+  }
+  &:after {
+    border: 2px solid var(--green);
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+  }
 
 `
