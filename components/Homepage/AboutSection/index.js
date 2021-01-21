@@ -23,24 +23,24 @@ const AboutSection = (myLoader) => {
           Here are a few technologies I've been working with recently 
           </AboutP>
           <AboutSkillList>
-            <AboutLi>
+            <li>
             JavaScript (ES6+)
-            </AboutLi>
-            <AboutLi>
+            </li>
+            <li>
             Next.js
-            </AboutLi>
-            <AboutLi>
+            </li>
+            <li>
             React
-            </AboutLi>
-            <AboutLi>
+            </li>
+            <li>
             Ruby on Rails
-            </AboutLi>
-            <AboutLi>
+            </li>
+            <li>
             HTML & (S)CSS
-            </AboutLi>
-            <AboutLi>
+            </li>
+            <li>
             Tailwind CSS
-            </AboutLi>
+            </li>
           </AboutSkillList>
         </AboutTextBlock>
         <AboutImgBlock>

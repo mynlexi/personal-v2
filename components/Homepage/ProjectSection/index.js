@@ -1,11 +1,10 @@
 import React from 'react'
 import {PSection} from './ProjectElements'
 import LargeProject from './ProjectFeatured'
-import { LibraryObj, ProjectObjOne } from './Data'
+import { ProjectObjOne } from './Data'
 import ProjectLibrary from './ProjectLibrary'
 
 const ProjectSection = () => {
-  console.log(LibraryObj)
   return (
     <PSection id="projects">
       <h2>

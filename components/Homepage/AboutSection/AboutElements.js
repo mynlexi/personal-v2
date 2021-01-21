@@ -33,19 +33,27 @@ export const AboutP = styled.p`
 export const AboutSkillList = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
-  padding: 0px;
-  margin: 20px 0px 0px;
+  padding: 0;
+  margin: 20px 0 0 0;
   overflow: hidden;
   list-style: none;
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    &:before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-size: var(--fz-sm);
+      line-height: 12px;
+    }
+  }
 `
 
-export const AboutLi = styled.li`
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  font-family: var(--font-mono);
-  font-size: var(--fz-xs);
-`
 
 export const AboutImgBlock = styled.div`
 position: relative;
