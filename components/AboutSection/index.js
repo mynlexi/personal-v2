@@ -46,7 +46,7 @@ const AboutSection = (img) => {
         <AboutImgBlock>
           <AboutWrapper>
               <Image
-              src={'/../public/images/Profile-Square.jpg'}
+              src={'/public/images/Profile-Square.jpg'}
               width={350}
               height={350}
               layout="responsive"
