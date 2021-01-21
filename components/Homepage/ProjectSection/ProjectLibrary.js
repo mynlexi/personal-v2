@@ -24,7 +24,7 @@ const ProjectLibrary = () => {
          
           return(
           <ProjectCard key={index}>
-            <CardInner>
+            <CardInner className="project-inner">
               <header>
                 <ProjectTop>
                   <div className="folder">
