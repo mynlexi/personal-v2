@@ -27,6 +27,7 @@ a {
   &:hover,
   &:focus {
     transform: translateY(-3px);
+    color: var(--green);
     
   }
 }
