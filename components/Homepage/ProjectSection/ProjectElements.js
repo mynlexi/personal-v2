@@ -331,13 +331,21 @@ export const LibButton = styled.button`
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: 1.25rem 1.75rem;
-  font-size: 14px;
-  // font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.645,0.045,0.0355,1);
+  transition: var(--transition);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
+  }
+  &:after {
+    display: none !important;
+  }
   margin-top: 50px;
 `

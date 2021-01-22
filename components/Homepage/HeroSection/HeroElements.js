@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {bigButton} from '../../../styles/mixins'
 
 export const HeroContainer = styled.section`
     display: flex;
@@ -36,7 +37,8 @@ export const HeroH2 = styled.h2`
 export const HeroH3 = styled.h3`
   margin: 0px; 
   margin-top: 10px;
-  color: #90DDF0;
+  color: var(--light-slate)
+
   line-height: 0.9;
   
   font-size: clamp(40px, 8vw, 80px);
@@ -49,16 +51,26 @@ export const Herop2 = styled.p`
 `
 
 export const HeroButton = styled.a`
+
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: 1.25rem 1.75rem;
-  font-size: 14px;
-  // font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.645,0.045,0.0355,1);
+  transition: var(--transition);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
+  }
+  &:after {
+    display: none !important;
+  }
   margin-top: 50px;
+
 `
