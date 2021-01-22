@@ -5,6 +5,7 @@ import { Link as LinkScroll } from 'react-scroll'
 import { navLinks } from '../../config'
 import Link from 'next/link'
 import { useScrollDirection } from '../Hooks/index';
+import Menu from '../Sidebar'
 
 
 
@@ -77,7 +78,8 @@ const Nav = ({ isHome }) => {
               Resume
             </a>
           </div>
-        </StyledLinks>              
+        </StyledLinks>
+        <Menu />            
       </StyledNav>
     </StyledHeader>
   );
