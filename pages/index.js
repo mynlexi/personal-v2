@@ -9,22 +9,19 @@ import AboutSection from '../components/Homepage/AboutSection'
 import ProjectSection from '../components/Homepage/ProjectSection'
 import ContactSection from '../components/Homepage/ContactSection'
 import Footer from '../components/Footer'
+import Email from '../components/Footer/Email'
+import Social from '../components/Footer/Social'
 
 
 
-export default function Home({myLoader}) {
-
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-  
+export default function Home() {
 
   return (
           <div>
-          <Sidebar isOpen={isOpen} toggle={toggle}/>
-          <Navbar toggle={toggle}/>
+          <Sidebar />
+          <Navbar />
+          <Email />
+          <Social />
           <MainContainer id="content">
           
             <HeroSection />
