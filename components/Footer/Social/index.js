@@ -21,6 +21,7 @@ const StyledSocialList = styled.ul`
     background-color: var(--light-slate);
   }
   li {
+    margin-bottom: 10px;
     &:last-of-type {
       margin-bottom: 20px;
     }  

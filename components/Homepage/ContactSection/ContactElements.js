@@ -4,6 +4,7 @@ export const CSection = styled.section`
   max-width: 600px;
   margin: 0 auto 100px;
   text-align: center;
+  padding: 100px 0px;
   @media (max-width: 768px) {
     margin: 0 auto 50px;
   }
@@ -25,6 +26,11 @@ export const CSection = styled.section`
   .title {
     font-size: clamp(40px, 5vw, 60px);
   }
+  .numbered-heading:before {
+    counter-increment: section 3;
+    
+  }
+  
 
 `
 
@@ -40,6 +46,14 @@ export const Cbutton = styled.button`
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
+  }
+  &:after {
+    display: none !important;
+  }
   margin-top: 50px;
 
 `

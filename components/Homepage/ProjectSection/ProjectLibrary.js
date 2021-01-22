@@ -1,5 +1,5 @@
 import React from 'react'
-import { LibrarySection, LibH2, LibraryGrid, LibA, LibButton, ProjectCard, CardInner,ProjectTop, ProjectLibraryLinks, CardTitle, CardDescription, ProjectTechstack } from './ProjectElements'
+import { StyledProjectsSection, StyledProject } from './ProjectElements'
 import {LibraryObj} from './Data'
 import Link from 'next/link'
 import IconGitHub from '../../Icons/github'
@@ -10,27 +10,27 @@ import IconFolder from'../../Icons/folder'
 const ProjectLibrary = () => {
 
   return (
-    <LibrarySection>
-      <LibH2>
+    <StyledProjectsSection>
+      <h2>
       Other Noteworthy Projects
-      </LibH2>
+      </h2>
       {/* <Link href="">
         <LibA>
         view the archive
         </LibA>
       </Link> */}
-      <LibraryGrid>
+      <div className="projects-grid">
         {LibraryObj.map(({github, external, title, description, techlist}, index)=>{
          
           return(
-          <ProjectCard key={index}>
-            <CardInner className="project-inner">
+          <StyledProject key={index}>
+            <div className="project-inner">
               <header>
-                <ProjectTop>
+                <div className="project-top">
                   <div className="folder">
                     <IconFolder />
                   </div>
-                  <ProjectLibraryLinks>
+                  <div className="project-links">
                     {github && (
                       <Link href={github}>
                       <a aria-label="GitHub Link">
@@ -46,40 +46,40 @@ const ProjectLibrary = () => {
                       </Link>
                     )
                     }  
-                  </ProjectLibraryLinks>
-                  </ProjectTop>
-                  <CardTitle>
+                  </div>
+                  </div >
+                  <div className="project-title">
                     {title}
-                  </CardTitle>
-                  <CardDescription>
+                  </div>
+                  <div className="project-description">
                     <p>{description}</p>
-                  </CardDescription>
+                  </div >
 
 
               
 
               </header>
               <footer>
-              <ProjectTechstack>
+              <ul className="project-tech-list">
                 {techlist.map((item, index)=>{
                   return(
                   <li key={index}>{item}</li>
                   )
                 })}
 
-                </ProjectTechstack>
+                </ul>
               </footer>
-            </CardInner>
-          </ProjectCard>
+            </div>
+          </StyledProject>
           )}
         )}
-      </LibraryGrid>
-      <LibButton>
+      </div>
+      <div className="more-button">
         Show More
-        </LibButton>
+        </div >
 
       
-    </LibrarySection>
+    </StyledProjectsSection>
   )
 }
 

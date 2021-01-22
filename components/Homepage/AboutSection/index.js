@@ -5,7 +5,7 @@ import {AboutSectionWrapper, AboutH2, AboutImgBlock, AboutInner, AboutLi, AboutP
 const AboutSection = (myLoader) => {
   return (
     <AboutSectionWrapper id="about">
-      <AboutH2 className="">
+      <AboutH2 className="numbered-heading">
         About Me
       </AboutH2>
       <AboutInner>
