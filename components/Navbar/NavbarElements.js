@@ -95,7 +95,7 @@ align-items: center;
     align-items: center;
     padding: 0;
     margin: 0;
-    margin-right: 10px
+    margin-right: 20px;
     list-style: none;
     list-style-type: none;
 
