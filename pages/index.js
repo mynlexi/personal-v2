@@ -8,6 +8,7 @@ import {MainContainer} from '../components/MainElements'
 import AboutSection from '../components/Homepage/AboutSection'
 import ProjectSection from '../components/Homepage/ProjectSection'
 import ContactSection from '../components/Homepage/ContactSection'
+import Footer from '../components/Footer'
 
 
 
@@ -33,6 +34,8 @@ export default function Home({myLoader}) {
       
            
           </MainContainer>
+          <Footer />
+
      </div>
   )
 }
