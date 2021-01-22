@@ -26,6 +26,11 @@ export const CSection = styled.section`
   .title {
     font-size: clamp(40px, 5vw, 60px);
   }
+  .numbered-heading:before {
+    counter-increment: section 3;
+    
+  }
+  
 
 `
 

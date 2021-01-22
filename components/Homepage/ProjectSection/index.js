@@ -7,7 +7,7 @@ import ProjectLibrary from './ProjectLibrary'
 const ProjectSection = () => {
   return (
     <PSection id="projects">
-      <h2>
+      <h2 className="numbered-heading">
       Some Things I’ve Built
       </h2>
 

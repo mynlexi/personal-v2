@@ -4,7 +4,7 @@ import {CSection, Cbutton} from './ContactElements'
 const ContactSection = () => {
   return (
     <CSection id="contact">
-      <h2 className="overline">
+      <h2 className="overline numbered-heading">
       What's Next?
       </h2>
       <h2 className="title">

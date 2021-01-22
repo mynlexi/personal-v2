@@ -4,6 +4,11 @@ export const AboutSectionWrapper = styled.section`
   max-width: 900px;
   margin: 0px auto;
   padding: 100px 0px;
+  .numbered-heading:before {
+    counter-increment: section 1;
+
+  }
+ 
 `
 
 export const AboutH2 = styled.h2`

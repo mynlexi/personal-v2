@@ -97,6 +97,7 @@ align-items: center;
     margin: 0;
     margin-right: 10px
     list-style: none;
+    list-style-type: none;
 
     li {
       margin: 0 5px;
