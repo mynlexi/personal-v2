@@ -24,7 +24,7 @@ export default function Home({myLoader}) {
           <div>
           <Sidebar isOpen={isOpen} toggle={toggle}/>
           <Navbar toggle={toggle}/>
-          <MainContainer>
+          <MainContainer id="content">
           
             <HeroSection />
             <AboutSection />
