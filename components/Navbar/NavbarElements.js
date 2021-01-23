@@ -114,6 +114,10 @@ align-items: center;
           font-size: var(--fz-xxs);
           text-align: right;
         }
+        &:hover,
+        &:focus {
+          color: var(--green)
+        }
       }
     }
   }
