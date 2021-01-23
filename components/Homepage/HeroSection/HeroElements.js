@@ -9,6 +9,9 @@ export const HeroContainer = styled.section`
     flex-direction: column;
     align-items: flex-start;
     min-height: 100vh;
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
 
   @media (max-width: 768px) {
   padding: 80px 0px;

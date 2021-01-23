@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -18,6 +17,10 @@ export default function Home() {
 
   return (
           <div>
+            <Head>
+              <title>Lorenz Westner</title>
+              <link rel="shortcut icon" href="/logo.svg" />
+            </Head>
           <Sidebar />
           <Navbar />
           <Email />
