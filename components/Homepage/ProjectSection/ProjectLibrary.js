@@ -74,9 +74,9 @@ const ProjectLibrary = () => {
           )}
         )}
       </div>
-      <div className="more-button">
+      {/* <div className="more-button">
         Show More
-        </div >
+        </div > */}
 
       
     </StyledProjectsSection>
