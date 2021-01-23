@@ -12,6 +12,12 @@ const ProjectSection = () => {
       </h2>
 
       <LargeProject {...ProjectObjOne} />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <ProjectLibrary />
     </PSection>
   )
