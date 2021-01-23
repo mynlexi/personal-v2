@@ -14,17 +14,17 @@ export const ProjectObjOne = {
 
 
 export const LibraryObj = [
-   {
+    { github: "https://github.com/mynlexi/personal-v2",
+    external: "https://lorenzwestner.com/",
+    title: "Porting a Gatsbyside to Next.js",
+    description: "Building this website.",
+    techlist: ["Next.js", "styled-components"]
+  },
+{
     github: null,
     external: "https://nextjs-jason.vercel.app/",
     title: "Porting a Jekyll Blog to Next.js",
     description: "In preparation for larger Projects with Next.js I ported a Jekyll website to Next.js.",
     techlist: ["Next.js", "Tailwind CSS", "Jekyll"]
   },
-  { github: null,
-    external: "https://nextjs-jason.vercel.app/",
-    title: "Porting a Jekyll Blog to Next.js",
-    description: "In preparation for larger Projects with Next.js I ported a Jekyll website to Next.js.",
-    techlist: ["Next.js", "Tailwind CSS", "Jekyll"]
-  }
-]
+ ]
