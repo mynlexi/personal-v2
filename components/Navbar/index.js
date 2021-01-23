@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { FaBars } from 'react-icons/fa'
+
 import { StyledHeader, StyledNav, StyledLinks} from './NavbarElements'
 import { Link as LinkScroll } from 'react-scroll'
 import { navLinks } from '../../config'
