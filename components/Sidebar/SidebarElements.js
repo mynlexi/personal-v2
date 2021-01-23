@@ -138,9 +138,22 @@ export const StyledSidebar = styled.aside`
       }
     }
     a {
-     // theme.mixins.link};
-      width: 100%;
-      padding: 3px 20px 20px;
+      display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+    cursor: pointer;
+    width: 100%;
+    padding: 3px 20px 20px;
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--green);
+      outline: 0;
+    }
+      
     }
   }
   .resume-link {

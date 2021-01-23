@@ -106,12 +106,13 @@ const Menu = () => {
               <ol>
                 {navLinks.map(({ url, name }, i) => (
                   <li key={i}>
+                  
                     <LinkScroll
                       smooth={true}
                       duration={500}
                       spy={true}
-                      exact='true' to={url}>
-                      {name}
+                      exact='true' to={url}><a>
+                      {name}</a>
                     </LinkScroll>
                   </li>
                 ))}
