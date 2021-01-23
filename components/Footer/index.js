@@ -15,13 +15,13 @@ const Footer = () => {
           
               <li >
                 <Link href={socialMedia[0].url}>
-                <a  aria-label={socialMedia[0].name} target="_blank">
+                <a  aria-label={socialMedia[0].name} target="_blank" rel="noreferrer" rel="noopener">
                   <IconGitHub  />
                 </a></Link>
               </li>
               <li >
                 <Link href={socialMedia[1].url}>
-                <a  aria-label={socialMedia[1].name} target="_blank">
+                <a  aria-label={socialMedia[1].name} target="_blank" rel="noreferrer" rel="noopener">
                   <IconLinkedin />
                 </a></Link>
               </li>
@@ -31,7 +31,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
       
-          <div> <Link href="https://github.com/mynlexi/personal-v2"><a target="_blank">Built</a></Link>by Lorenz Westner,<Link href="https://github.com/bchiang7/v4"><a target="_blank">Designed</a></Link>by Brittany Chiang</div>
+          <div> <Link href="https://github.com/mynlexi/personal-v2"><a target="_blank" rel="noreferrer" rel="noopener">Built</a></Link>by Lorenz Westner,<Link href="https://github.com/bchiang7/v4"><a target="_blank" rel="noreferrer" rel="noopener">Designed</a></Link>by Brittany Chiang</div>
 
         
       

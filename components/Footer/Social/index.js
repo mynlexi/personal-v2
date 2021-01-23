@@ -50,7 +50,7 @@ const Social = () => (
     <StyledSocialList>
               <li >
                 <Link href={socialMedia[0].url}>
-                <a  aria-label={socialMedia[0].name} target="_blank">
+                <a  aria-label={socialMedia[0].name} target="_blank" rel="noreferrer" rel="noopener">
                   <IconGitHub  />
                 </a></Link>
               </li>
