@@ -34,10 +34,10 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
         </ProjectTechList>
         <ProjectLinks>
           <Link href={github_link}>
-          <a ><IconGitHub /></a>
+          <a target="_blank" rel="noopener"><IconGitHub /></a>
           </Link>
           <Link href={project_link}>
-          <a><IconExternal /></a>
+          <a target="_blank" rel="noopener" ><IconExternal /></a>
           </Link>
           {/* if one of the link is missing dont display icon? */}
         </ProjectLinks>
@@ -45,7 +45,7 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
       </ProjectContent>
       <ProjectImage>
         <Link href={project_link}>
-          <a>
+          <a target="_blank" rel="noopener">
             <div className="img">
               <div></div>
               <Image

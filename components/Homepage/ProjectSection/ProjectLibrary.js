@@ -33,14 +33,14 @@ const ProjectLibrary = () => {
                   <div className="project-links">
                     {github && (
                       <Link href={github}>
-                      <a aria-label="GitHub Link">
+                      <a aria-label="GitHub Link" target="_blank" rel="noopener">
                       <IconGitHub />
                     </a>
                     </Link>
                     )}
                     { external && (
                       <Link href={external}>
-                      <a>
+                      <a target="_blank" rel="noopener">
                        <IconExternal />
                       </a>
                       </Link>
