@@ -56,7 +56,7 @@ const Social = () => (
               </li>
               <li >
                 <Link href={socialMedia[1].url}>
-                <a  aria-label={socialMedia[1].name} target="_blank">
+                <a  aria-label={socialMedia[1].name} target="_blank" rel="noreferrer" rel="noopener">
                   <IconLinkedin />
                 </a></Link>
               </li>
