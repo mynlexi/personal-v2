@@ -8,19 +8,24 @@ export const ProjectObjOne = {
   techlist: ["Ruby on Rails", "Alpaca API"],
   github_link: "https://github.com/mynlexi/longtermgiving",
   project_link: "https://www.longtermgiving.trade/"
+}
 
+export const ProjectObjTwo ={
+  id:"watersport",
+  right_text : false,
+  title: "Suncoast Watersports",
+  description: "Website for Suncoast Watersports, build on behalf of Catnip. Catnip is a Marketing Agency specialized on Tourism",
+  img: ['/images/projects/suncoast.jpg',3205, 1946],
+  alt: "screenshot of the homepage of the suncoast watersports",
+  techlist: ["Jekyll", "TailwindCSS"],
+  github_link: null,
+  project_link: "https://funstpete.com/"
 }
 
 
 
 export const LibraryObj = [
-    {
-    github: null,
-    external: "https://funstpete.com/",
-    title: "Website for Suncoast Watersports",
-    description: "Build the Homepage in Freelance work for Marketing Agency (Catnip)",
-    techlist: ["Jekyll", "TailwindCSS"]
-  },
+  
   { github: "https://github.com/mynlexi/personal-v2",
     external: "https://lorenzwestner.com/",
     title: "Porting a Gatsbyside to Next.js",

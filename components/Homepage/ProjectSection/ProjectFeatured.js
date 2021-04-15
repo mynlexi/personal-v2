@@ -2,16 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {ProjectContent, ProjectGrid, ProjectDescription, ProjectOverline, ProjectTitle, ProjectImage, ProjectTechList, ProjectImageA, ProjectLi, ProjectLinks, ProjectImgStylediv } from './ProjectElements'
+import {LeftProjectContent, LeftProjectGrid, LeftProjectImage, LeftProjectTechList, LeftProjectLinks} from './ProjectFeature_Left'
 import IconGitHub from '../../Icons/github'
 import IconExternal from '../../Icons/external'
 
 
-const LargeProject = ({id, title, description, techlist, github_link, project_link, img, alt}) => {
+const LargeProject = ({id, right_text, title, description, techlist, github_link, project_link, img, alt}) => {
 
   
   return (
-    <ProjectGrid id={id}>
+    <>
+    {right_text ? 
+      <ProjectGrid id={id}>
       <ProjectContent>
+       
         <ProjectOverline>
           Featured Project
         </ProjectOverline>
@@ -33,13 +37,13 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
 
         </ProjectTechList>
         <ProjectLinks>
-          <Link href={github_link}>
+          { github_link && <Link href={github_link}>
           <a target="_blank" rel="noopener"><IconGitHub /></a>
-          </Link>
+          </Link>}
+          
           <Link href={project_link}>
           <a target="_blank" rel="noopener" ><IconExternal /></a>
           </Link>
-          {/* if one of the link is missing dont display icon? */}
         </ProjectLinks>
 
       </ProjectContent>
@@ -62,7 +66,59 @@ const LargeProject = ({id, title, description, techlist, github_link, project_li
 
       </ProjectImage>
       
-    </ProjectGrid>
+    </ProjectGrid>:
+     
+     <LeftProjectGrid>
+       <LeftProjectContent>
+       <ProjectOverline>
+          Featured Project
+        </ProjectOverline>
+        <ProjectTitle>
+          {title}
+        </ProjectTitle>
+        <ProjectDescription>
+          <p>
+          {description}
+          </p>
+
+        </ProjectDescription>
+        <LeftProjectTechList>
+          {techlist.map((item, index)=>{
+            return(
+            <ProjectLi key={index}>{item}</ProjectLi>
+            )
+          })}
+
+        </LeftProjectTechList>
+        <LeftProjectLinks>
+          { github_link && <Link href={github_link}>
+          <a target="_blank" rel="noopener"><IconGitHub /></a>
+          </Link>}
+          
+          <Link href={project_link}>
+          <a target="_blank" rel="noopener" ><IconExternal /></a>
+          </Link>
+        </LeftProjectLinks>
+       </LeftProjectContent>
+       <LeftProjectImage>
+        <Link href={project_link}>
+            <a target="_blank" rel="noopener">
+              <div className="img">
+                <div></div>
+                <Image
+                src={img[0]}
+                alt={alt}
+                width={img[1]}
+                height={img[2]}
+                layout="responsive"
+                />
+
+              </div>
+            </a>
+          </Link>
+       </LeftProjectImage>
+       </LeftProjectGrid>}
+    </>
   )
 }
 

@@ -24,6 +24,7 @@ export const ProjectGrid = styled.div`
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
+  
 `
 export const ProjectContent = styled.div`
   position: relative;
@@ -108,6 +109,7 @@ export const ProjectLi = styled.li`
   font-size: var(--fz-xs);
   white-space: nowrap;
   margin: 0px 0px 5px 20px;
+  
 `
 
 export const ProjectLinks = styled.div`
