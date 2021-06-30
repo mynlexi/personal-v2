@@ -1,6 +1,20 @@
 export const ProjectObjOne = {
-  id:"longtermgiving",
+  id:"chiemseegin",
   right_text : true,
+  title: "Chiemsee Gin",
+  description: "Ecommerce Shop and Homepage for the Chiemsee Gin. GraphCMS as headless CMS fetched with Apollo, hosted serveless on Vercel, orderflow through Shopify",
+  img: ['/images/projects/chiemseegin.jpg',3204, 1922],
+  alt: "screenshot of the homepage of the Chiemsee Gin",
+  techlist: ["Nextjs", "React", "GraphQL", "Apollo", "Shopify"],
+  github_link: "https://github.com/mynlexi/ChiemseeGin",
+  project_link: "https://chiemsee-gin.vercel.app/"
+}
+
+
+
+export const ProjectObjTwo = {
+  id:"longtermgiving",
+  right_text : false,
   title: "LongTermGiving",
   description: "Demo-product for allowing finance-savy Samaritans to donate financial assets instead of cash, and therefore changing incentives for non-profits.",
   img: ['/images/projects/ltg-profile.jpg',1189, 742],
@@ -10,9 +24,9 @@ export const ProjectObjOne = {
   project_link: "https://www.longtermgiving.trade/"
 }
 
-export const ProjectObjTwo ={
+export const ProjectObjThree ={
   id:"watersport",
-  right_text : false,
+  right_text : true,
   title: "Suncoast Watersports",
   description: "Website for Suncoast Watersports, build on behalf of Catnip. Catnip is a Marketing Agency specialized on Tourism",
   img: ['/images/projects/suncoast.jpg',3205, 1946],
