@@ -48,7 +48,7 @@ const Nav = ({ isHome }) => {
                     ) : (
                     <Link href="/" aria-label="home">
                       <a>
-                        &gt; mynlexi
+                        &gt; torrel.eth
                       </a>
                     </Link>
           )}

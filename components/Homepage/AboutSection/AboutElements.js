@@ -33,6 +33,14 @@ export const AboutTextBlock = styled.div`
 
 export const AboutP = styled.p`
   margin: 0px 0px 15px;
+  > a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: var(--transition);
+    color: var(--green);
+  }
 `
 
 export const AboutSkillList = styled.ul`

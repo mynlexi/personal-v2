@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import {AboutSectionWrapper, AboutH2, AboutImgBlock, AboutInner, AboutLi, AboutP, AboutSkillList, AboutTextBlock, AboutWrapper} from './AboutElements'
+import Link from "next/link"
 
 const AboutSection = (myLoader) => {
   return (
@@ -14,33 +15,34 @@ const AboutSection = (myLoader) => {
           Hello! I'm Lorenz, currently based in Germany. 
           </AboutP>
           <AboutP>
-          I immensly enjoy building things, and making them run as fast as possible.  
+          I immensely enjoy building things, and making them run as fast as possible.
           </AboutP>
           <AboutP>
-          After recieving my MSc. in Finance I decided to pursue a career as Full-stack Developer.
+          After receiving my MSc. in Finance I decided to pursue a career as Software Engineer.
           </AboutP>
           <AboutP>
-          Here are a few technologies I've been working with recently 
+          Now I work for <Link href={"https://getvoiceline.com/"}><a>VoiceLine</a></Link> as a Junior Fullstack Engineer.
           </AboutP>
           <AboutSkillList>
             <li>
-            JavaScript (ES6+)
-            </li>
+              TypeScript/JavaScript
+            </li>  <li>
+            Golang
+          </li> <li>
+            Chromium Extension
+          </li>
             <li>
             Next.js
             </li>
+
             <li>
             React
             </li>
-            <li>
-            Ruby on Rails
-            </li>
+
             <li>
             HTML & (S)CSS
             </li>
-            <li>
-            Tailwind CSS
-            </li>
+
           </AboutSkillList>
         </AboutTextBlock>
         <AboutImgBlock>
