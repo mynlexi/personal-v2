@@ -5,11 +5,12 @@ import {ProjectContent, ProjectGrid, ProjectDescription, ProjectOverline, Projec
 import {LeftProjectContent, LeftProjectGrid, LeftProjectImage, LeftProjectTechList, LeftProjectLinks} from './ProjectFeature_Left'
 import IconGitHub from '../../Icons/github'
 import IconExternal from '../../Icons/external'
+import {fleekloader} from "../../utils/imageloader";
 
 
-const LargeProject = ({id, right_text, title, description, techlist, github_link, project_link, img, alt}) => {
 
-  
+  const LargeProject = ({id, right_text, title, description, techlist, github_link, project_link, img, alt}) => {
+  console.log(typeof fleekloader, "hallo")
   return (
     <>
     {right_text ? 
@@ -52,7 +53,7 @@ const LargeProject = ({id, right_text, title, description, techlist, github_link
           <a target="_blank" rel="noopener">
             <div className="img">
               <div></div>
-              <Image
+              <Image loader={()=>fleekloader({src: img[0], width: img[1] })}
               src={img[0]}
               alt={alt}
               width={img[1]}

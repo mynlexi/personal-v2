@@ -2,8 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import {AboutSectionWrapper, AboutH2, AboutImgBlock, AboutInner, AboutLi, AboutP, AboutSkillList, AboutTextBlock, AboutWrapper} from './AboutElements'
 import Link from "next/link"
+import {fleekloader} from "../../utils/imageloader";
 
-const AboutSection = (myLoader) => {
+
+
+const AboutSection = () => {
   return (
     <AboutSectionWrapper id="about">
       <AboutH2 className="numbered-heading">
@@ -48,7 +51,8 @@ const AboutSection = (myLoader) => {
         <AboutImgBlock>
           <div className="wrapper">
               <Image
-              src='/images/Profile-Square.jpg'
+                  loader={()=>fleekloader({src: "Profile-Square.jpg",width: 350})}
+              src="Profile-Square.jpg"
               width={350}
               height={350}
               layout="responsive"

@@ -1,9 +1,11 @@
+
+
 export const ProjectObjOne = {
   id:"chiemseegin",
   right_text : true,
   title: "Chiemsee Gin",
   description: "Ecommerce Shop and Homepage for the Chiemsee Gin. GraphCMS as headless CMS fetched with Apollo, hosted serveless on Vercel, orderflow through Shopify",
-  img: ['/images/projects/chiemseegin.jpg',3204, 1922],
+  img: ['chiemseegin.jpg',3204, 1922],
   alt: "screenshot of the homepage of the Chiemsee Gin",
   techlist: ["Nextjs", "React", "GraphQL", "Apollo", "Shopify"],
   github_link: "https://github.com/mynlexi/ChiemseeGin",
@@ -17,7 +19,7 @@ export const ProjectObjTwo = {
   right_text : false,
   title: "LongTermGiving",
   description: "Demo-product for allowing finance-savy Samaritans to donate financial assets instead of cash, and therefore changing incentives for non-profits.",
-  img: ['/images/projects/ltg-profile.jpg',1189, 742],
+  img: ['ltg-profile.jpg',1189, 742],
   alt: "screenshot of the homepage of the longtermgiving project",
   techlist: ["Ruby on Rails", "Alpaca API"],
   github_link: "https://github.com/mynlexi/longtermgiving",
@@ -29,7 +31,8 @@ export const ProjectObjThree ={
   right_text : true,
   title: "Suncoast Watersports",
   description: "Website for Suncoast Watersports, build on behalf of Catnip. Catnip is a Marketing Agency specialized on Tourism",
-  img: ['/images/projects/suncoast.jpg',3205, 1946],
+  img: [
+  'suncoast.jpg',3205, 1946],
   alt: "screenshot of the homepage of the suncoast watersports",
   techlist: ["Jekyll", "TailwindCSS"],
   github_link: null,
