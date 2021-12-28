@@ -9,7 +9,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/lorenz-westner-4266b9191/',
+      url: 'https://www.linkedin.com/in/torrel/',
     },
 
   ],
