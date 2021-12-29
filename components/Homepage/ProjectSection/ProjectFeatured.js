@@ -107,6 +107,7 @@ import {fleekloader} from "../../utils/imageloader";
               <div className="img">
                 <div></div>
                 <Image
+                    loader={()=>fleekloader({src: img[0], width: img[1] })}
                 src={img[0]}
                 alt={alt}
                 width={img[1]}
